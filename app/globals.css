@@ -1,0 +1,31 @@
+:root{--bg:#0b1020;--panel:#0f1430;--text:#e6eaf2;--muted:#aab1c3;--accent:#5dd3ff;--accent-2:#8b5cf6;--border:#202647}
+*{box-sizing:border-box}
+html,body{padding:0;margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.5}
+a{color:inherit;text-decoration:none}
+.container{max-width:960px;margin:0 auto;padding:24px}
+.site-header{background:var(--panel);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:700;letter-spacing:.3px;color:var(--text)}
+.nav{display:flex;gap:16px}
+.nav a{color:var(--muted)}
+.nav a:hover{color:var(--accent)}
+.site-footer{border-top:1px solid var(--border);margin-top:48px;padding:16px 0;color:var(--muted)}
+.hero{padding:56px 0}
+.hero h1{font-size:40px;margin:0 0 12px;background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:var(--muted);max-width:720px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:24px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px}
+.card h3{margin:0 0 8px}
+.card p{color:var(--muted)}
+.code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;background:#0a0f1d;border:1px solid var(--border);padding:12px;border-radius:8px;overflow:auto}
+.list{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.list a{display:block;padding:12px;border:1px solid var(--border);border-radius:8px;background:var(--panel)}
+.list a:hover{border-color:var(--accent)}
+.input, select, textarea{width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:#0a0f1d;color:var(--text)}
+.label{display:block;margin:10px 0 6px;color:var(--muted)}
+.btn{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#000;font-weight:600;border:0;padding:10px 14px;border-radius:10px;cursor:pointer}
+.btn:disabled{opacity:.6;cursor:not-allowed}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.small{color:var(--muted);font-size:14px}
+.badge{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid var(--border);color:var(--muted);font-size:12px}
+.hr{height:1px;background:var(--border);margin:24px 0}
